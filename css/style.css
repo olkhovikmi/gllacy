@@ -1,0 +1,128 @@
+@font-face {
+		font-family: "Roboto";
+		src: url("/fonts/roboto.woff2") format("woff2"), url("/fonts/roboto.woff") format("woff");
+		font-style: normal;
+		font-weight: 400;
+}
+@font-face {
+		font-family: "Roboto";
+		src: url("/fonts/robotomedium.woff2") format("woff2"), url("/fonts/robotomedium.woff") format("woff");
+		font-style: normal;
+		font-weight: 500;
+}
+@font-face {
+		font-family: "Roboto";
+		src: url("/fonts/robotobold.woff2") format("woff2"), url("/fonts/robotobold.woff") format("woff");
+		font-style: normal;
+		font-weight: 700;
+}
+* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+		box-sizing: border-box;
+}
+
+body {
+		color: #ffffff;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		background-color: #849d8f;
+}
+
+.wrap {
+		width: 100%;
+		max-width: 1165px;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+}
+
+.header__menu {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 10px;
+}
+
+.menu-left {
+		width: 48.9082969432%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+}
+.menu-left__item {
+		position: relative;
+}
+.menu-left__link {
+		color: #ffffff;
+		font-weight: 700;
+		border-bottom: 1px solid #a1b6aa;
+}
+.menu-left__active:hover {
+		padding: 10px 14px;
+		color: #323232;
+		text-align: center;
+		background-color: #f7f6f3;
+		border: none;
+		border-radius: 30px;
+}
+.menu-left__submenu:hover .submenu {
+		display: block;
+}
+.menu-left__item:nth-child(3) {
+		margin-left: 25px;
+		margin-right: 30px;
+}
+.menu-left__logo {
+		margin-right: 25px;
+}
+.menu-left__logo img {
+		max-width: 100%;
+}
+
+.submenu {
+		position: absolute;
+		top: 30px;
+		left: -10px;
+		display: none;
+		min-width: 145px;
+		box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+		background-color: #f8f7f4;
+		border-radius: 10px;
+}
+.submenu__item {
+		padding: 10px 0;
+		cursor: pointer;
+}
+.submenu__item:not(:first-child):hover {
+		background-color: #fbded7;
+}
+.submenu__item:not(:first-child):active {
+		background-color: #f6b5a5;
+}
+.submenu__underline {
+		position: relative;
+}
+.submenu__underline::after {
+		position: absolute;
+		top: 35px;
+		left: 10px;
+		content: "";
+		width: 128px;
+		height: 1px;
+		background-color: #d1d0ce;
+}
+.submenu__link {
+		padding-left: 20px;
+		color: #323232;
+		font-size: 0.85em;
+}
+.submenu__active {
+		font-weight: 700;
+}
+
+.menu-right {
+		width: 21.3973799127%;
+}

@@ -1,0 +1,30 @@
+//Подключение штрифтов
+@import "fonts";
+//Сброс станицы
+@import "reset";
+
+//Переменные 
+$black: #323232;
+$bgc-orange:linear-gradient(to top, #e74a35 0%, #f26843 100%);
+
+//Body
+body {
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	
+	background-color: #849d8f;
+}
+
+//Обертка
+.wrap {
+	width: 100%;
+	max-width: 1165px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+//Header
+@import "header";
