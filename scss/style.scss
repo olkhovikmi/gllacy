@@ -5,7 +5,8 @@
 
 //Переменные 
 $black: #323232;
-$bgc-orange:linear-gradient(to top, #e74a35 0%, #f26843 100%);
+$bgc-orng: #e84d37;
+$bgi-orng:linear-gradient(to top, #e74a35 0%, #f26843 100%);
 
 //Body
 body {
@@ -24,6 +25,15 @@ body {
 	margin: 0 auto;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+//HIDDEN
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
 }
 
 //Header
