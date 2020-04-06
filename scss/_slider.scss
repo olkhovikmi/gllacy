@@ -1,0 +1,136 @@
+.slider-box {
+	position: relative;
+	min-height: 565px;
+}
+
+.toggle-box {
+	position: absolute;
+	display: flex;
+	bottom: 0;
+
+	z-index: 50;
+}
+
+.toggle-off {
+	display: block;	
+	width: 21px;
+	height: 21px;
+	margin-right: 10px;
+
+	background-color: transparent;
+	border: 1px solid #ffff;
+	border-radius: 50%;
+
+	cursor: pointer;
+	transition: all .5s ease-out;
+}
+
+
+.toggle-off:last-child {
+	margin-right: 0;
+}
+
+#radio-one:checked ~ .toggle-box .toggle-off:nth-child(1),
+#radio-two:checked ~ .toggle-box .toggle-off:nth-child(2),
+#radio-three:checked ~ .toggle-box .toggle-off:nth-child(3) {
+	background-color: #fff;	
+}
+
+#radio-one:checked ~ .slider .slider__item:nth-child(1),
+#radio-two:checked ~ .slider .slider__item:nth-child(2),
+#radio-three:checked ~ .slider .slider__item:nth-child(3) {
+	display: block;	
+}
+
+
+.slider {
+	width: 100%;
+	display: flex;
+	justify-content: row;
+
+
+	&__item:nth-child(1) {
+		display: none;		
+	}
+
+	&__item:nth-child(2) {
+		display: none;
+	}
+
+	&__item:nth-child(3) {
+		display: none;
+	}
+
+	&__title {
+		position: relative;
+		width: 667px/1145px*100%;
+		margin: 0 auto;
+
+		font-size: 3.75em;
+		font-weight: 700;
+
+		transform: translateY(350px);
+		z-index: 20;
+	}
+
+	&__btn {
+		position: relative;
+		min-width: 280px;
+		display: block;
+		margin: 0 auto;
+		padding: 15px 0;
+
+		color: #ffff;
+		text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+		font-size: 2em;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+
+		box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+		background-image: $bgi-orng;
+		border: none;
+		outline: none;
+		border-radius: 20px;
+
+		transform: translateY(370px);
+		cursor: pointer;
+		z-index: 30;
+	}
+
+	&__btn:hover {
+		box-shadow: 0 2px 2px #ac1000;
+		background-image: linear-gradient(to top, #f17d64 0%, #f26843 100%);
+	}
+
+	&__btn:active {
+		box-shadow: inset 0 2px 2px #942718;
+		background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+	}
+}
+
+.slider-img {
+	position: relative;
+
+	&__left {
+		position: absolute;
+		top: 40px;
+		left: 245px;
+		z-index: 4;
+	}
+
+	&__right {
+		position: absolute;
+		top: 90px;
+		right: 250px;
+		z-index: 2;
+	}
+
+	&__backlight {
+		position: absolute;
+		top: -80px;
+		z-index: 1;
+
+		pointer-events: none;
+	}
+}
