@@ -1,0 +1,98 @@
+.shop-box {}
+
+.shop-gllacy {
+	width: 100%;
+	margin-bottom: 40px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+
+		color: $black;
+
+		background-image: url('/img/shop_wafer.png');
+		background-repeat: no-repeat;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+
+	&__left {
+		flex-basis: 50%;
+		margin-right: 30px;
+	}
+
+	&__right {
+		flex-basis: 50%;
+	}
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 25px;
+
+		font-size: 1.5em;
+		font-weight: 500;
+	}
+
+	&__text {
+		position: relative;
+		margin-left: 50px;
+		padding-left: 8px;
+
+		line-height: 1.3em;
+	}
+
+	&__text:nth-child(1) {
+		margin-bottom: 30px;
+	}
+}
+
+.ice::before {
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: -50px;
+	width: 49px;
+	height: 49px;
+	content: "";
+
+	background-image: url("/img/shop_1.svg");	
+}
+.cow::before {
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: -50px;
+	width: 49px;
+	height: 49px;
+	content: "";
+
+	background-image: url("/img/shop_3.svg");	
+}
+.leaflet::before {
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: -50px;
+	width: 49px;
+	height: 49px;
+	content: "";
+
+	background-image: url("/img/shop_2.svg");	
+}
+.thermometer::before {
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: -50px;
+	width: 49px;
+	height: 49px;
+	content: "";
+
+	background-image: url("/img/shop_4.svg");	
+}

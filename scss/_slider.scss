@@ -35,6 +35,12 @@
 #radio-three:checked ~ .toggle-box .toggle-off:nth-child(3) {
 	background-color: #fff;	
 }
+#radio-one:hover ~ .toggle-box .toggle-off:nth-child(1),
+#radio-two:hover ~ .toggle-box .toggle-off:nth-child(2),
+#radio-three:hover ~ .toggle-box .toggle-off:nth-child(3) {
+	background-color: #b2c1b7;	
+}
+
 
 #radio-one:checked ~ .slider .slider__item:nth-child(1),
 #radio-two:checked ~ .slider .slider__item:nth-child(2),

@@ -1,0 +1,66 @@
+.ice-cream-box {}
+
+.ice-cream {
+	margin-bottom: 40px;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {				
+		color: #ffff;
+		font-weight: 500;
+		
+		border-bottom: 1px solid #8fa699;
+	}
+
+	&__link:hover,
+	&__link:active {				
+		color: #ffbc9e;
+	}
+	
+}
+
+.ice-cream-item {
+	flex-basis: 50%;
+	margin-right: 25px;
+
+	text-align: center;
+}
+
+.ice-cream-item:last-child {
+	margin-right: 0;
+}
+
+.icer-cream {
+
+	&__img {
+		position: relative;
+		margin-bottom: 20px;
+
+		text-align: left;
+	}
+}
+
+.ice-cream-price {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	font-size: 2.63em;
+	font-weight: 700;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);	
+}
+
+.ice-cream-weight {
+	font-size: .76em;
+	font-weight: 700;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.img-hit {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
