@@ -30,6 +30,8 @@ body {
 //HIDDEN
 .visually-hidden {
 	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
@@ -45,4 +47,5 @@ body {
 //Slider
 @import "slider";
 
-//
+//Banner
+@import "banner";
