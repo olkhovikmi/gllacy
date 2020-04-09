@@ -108,7 +108,7 @@ body {
 		box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 		background-color: #f8f7f4;
 		border-radius: 10px;
-		border-top: 3px solid #849d8f;
+		border-top: 3px solid #91ac9d;
 }
 .submenu__item {
 		padding: 10px 0;
@@ -709,4 +709,96 @@ body {
 		height: 49px;
 		content: "";
 		background-image: url("/img/shop_4.svg");
+}
+
+.blog-box {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+}
+
+.blog {
+		flex-basis: 50%;
+		margin-right: 20px;
+		background-image: url("/img/blog_1.png");
+		background-repeat: no-repeat;
+}
+.blog__title {
+		display: block;
+		margin-bottom: 15px;
+		color: #323232;
+		text-align: left;
+		font-weight: 500;
+}
+.blog__link {
+		display: inline-block;
+		width: 300px;
+		color: #323232;
+		font-size: 1.5em;
+		font-weight: 700;
+		line-height: 1.3em;
+		text-decoration: underline;
+}
+
+.blog-inner {
+		padding: 20px 20px 75px 20px;
+}
+
+.mailing {
+		flex-basis: 50%;
+		padding: 5px 0;
+		padding-left: 5px;
+		padding-right: 10px;
+		background-image: url("/img/blog_2.png");
+		background-repeat: no-repeat;
+}
+.mailing__text {
+		margin-bottom: 35px;
+		color: #5a5a5a;
+		line-height: 1.3em;
+}
+.mailing__input {
+		min-width: 69.2456479691%;
+		padding: 15px;
+		color: #999999;
+		font-weight: 400;
+		border: 1px solid #d7d7d7;
+		border-radius: 10px;
+}
+.mailing__input::placeholder {
+		color: #999999;
+		font-weight: 400;
+}
+.mailing__btn {
+		width: 133px;
+		margin-left: 10px;
+		padding: 15px 0;
+		color: #fefefe;
+		font-size: 1.13em;
+		font-weight: 700;
+		text-align: center;
+		box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+		background-color: #e84d37;
+		background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+		border: none;
+		outline: none;
+		border-radius: 30px;
+		cursor: pointer;
+}
+.mailing__btn:hover {
+		box-shadow: 0 2px 2px #ac1000;
+		background-image: linear-gradient(to top, #f17d64 0%, #f26843 100%);
+}
+.mailing__btn:active {
+		box-shadow: inset 0 2px 2px #942718;
+		background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+
+.mailing-inner {
+		height: 100%;
+		margin: 0 auto;
+		padding-top: 35px;
+		padding-left: 15px;
+		background-color: #f8f7f4;
+		border-radius: 10px;
 }
