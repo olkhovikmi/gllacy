@@ -15,9 +15,13 @@
 		border-bottom: 1px solid #8fa699;
 	}
 
-	&__link:hover,
-	&__link:active {				
+	&__link:hover	{				
 		color: #ffbc9e;
+	}
+
+	&__link:active {
+		color: #ffbc9e;
+		border-bottom: none;
 	}
 	
 }

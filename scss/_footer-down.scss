@@ -1,0 +1,141 @@
+.footer-down {}
+
+.wrap {}
+
+
+.footer-down-box {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.footer-down-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__social {
+		width: 190px/1145px*100%;
+	}
+
+	&__social-link {
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		margin-right: 10px;
+
+		background-color: transparent;
+		border: 2px solid #c1cec7;
+		border-radius: 50%;
+	}
+
+	&__social-link:last-child {
+		margin-right: 0;
+	}
+
+	&__social-tw {
+		background-image: url('/img/tw.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+	}
+
+	&__social-inst {
+		background-image: url('/img/ins.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+	}
+
+	&__social-fb {
+		background-image: url('/img/fb.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+	}
+
+	&__social-vk {
+		background-image: url('/img/vk.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+	}
+
+	&__social-tw:hover,
+	&__social-inst:hover,
+	&__social-fb:hover,
+	&__social-vk:hover {
+		opacity: 1;
+	}
+
+	&__social-tw:active,
+	&__social-inst:active,
+	&__social-fb:active,
+	&__social-vk:active {
+		opacity: 0.9;
+	}
+
+	&__link {
+		width: 330px/1145px*100%;
+	}
+
+	&__link-item {
+		position: relative;
+		display: inline-block;
+		margin-left: 20px;
+
+		color: #ffffff;
+		font-size: .85em;
+		text-align: left;
+		line-height: 1.5em;
+
+		border-bottom: 1px solid #8fa699;
+	}
+
+	&__link-item:nth-child(1)::before {
+		position: absolute;
+		top: 3px;
+		left: -20px;
+		display: block;
+		width: 15px;
+		height: 13px;
+		content: "";
+
+		background-image: url("/img/footer_heart.svg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+	&__link-item:nth-child(4) {
+		margin-left: 25px;
+	}
+
+	&__link-item:hover {
+		color: #ffbc9e;
+	}
+
+	&__link-item:active {
+		color: #ffbc9e;
+		border-bottom: none;
+	}
+
+	&__logo {
+		width: 190px/1145px*100%;
+	}
+
+	&__logo-link {
+		display: block;
+		margin-bottom: 5px;
+
+	}
+
+	&__logo-link:last-child {
+		color: #fefefe;
+		font-size: 0.75em;
+	}
+
+	&__logo-link:hover,
+	&__logo-link:active {
+		color: #ffbc9e;
+	}
+	
+}

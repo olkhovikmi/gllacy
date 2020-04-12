@@ -587,8 +587,12 @@ body {
 		font-weight: 500;
 		border-bottom: 1px solid #8fa699;
 }
-.ice-cream__link:hover, .ice-cream__link:active {
+.ice-cream__link:hover {
 		color: #ffbc9e;
+}
+.ice-cream__link:active {
+		color: #ffbc9e;
+		border-bottom: none;
 }
 
 .ice-cream-item {
@@ -803,36 +807,36 @@ body {
 		border-radius: 10px;
 }
 
-.footer-top {
+.footer-top-box {
 		position: relative;
 		width: 100%;
 }
-.footer-top__address {
+.footer-top-box__address {
 		position: absolute;
-		top: 15%;
-		right: 30px;
+		top: 10%;
+		right: 150px;
 		max-width: 302px;
 		background-color: #fdfdfc;
 		border-radius: 10px;
 }
-.footer-top__inner {
+.footer-top-box__inner {
 		padding: 30px 25px;
 		color: #323232;
 }
-.footer-top__text {
+.footer-top-box__text {
 		font-size: 0.87em;
 		line-height: 1.5em;
 }
-.footer-top__text strong {
+.footer-top-box__text strong {
 		display: block;
 		margin-bottom: 20px;
 		font-size: 1.3em;
 		line-height: 1.5em;
 }
-.footer-top__text:last-of-type {
+.footer-top-box__text:last-of-type {
 		margin-bottom: 25px;
 }
-.footer-top__btn {
+.footer-top-box__btn {
 		width: 100%;
 		padding: 12px;
 		color: #fefefe;
@@ -845,15 +849,120 @@ body {
 		outline: none;
 		cursor: pointer;
 }
-.footer-top__btn:hover {
+.footer-top-box__btn:hover {
 		box-shadow: 0 2px 2px #ac1000;
 		background-image: linear-gradient(to top, #f17d64 0%, #f26843 100%);
 }
-.footer-top__btn:active {
+.footer-top-box__btn:active {
 		box-shadow: inset 0 2px 2px #942718;
 		background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 
 .footer-top__text .footer-tel {
 		margin-bottom: 0;
+}
+
+.footer-down-box {
+		margin-top: 20px;
+		margin-bottom: 25px;
+}
+
+.footer-down-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+.footer-down-container__social {
+		width: 16.5938864629%;
+}
+.footer-down-container__social-link {
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		margin-right: 10px;
+		background-color: transparent;
+		border: 2px solid #c1cec7;
+		border-radius: 50%;
+}
+.footer-down-container__social-link:last-child {
+		margin-right: 0;
+}
+.footer-down-container__social-tw {
+		background-image: url("/img/tw.svg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+}
+.footer-down-container__social-inst {
+		background-image: url("/img/ins.svg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+}
+.footer-down-container__social-fb {
+		background-image: url("/img/fb.svg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+}
+.footer-down-container__social-vk {
+		background-image: url("/img/vk.svg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		opacity: 0.8;
+}
+.footer-down-container__social-tw:hover, .footer-down-container__social-inst:hover, .footer-down-container__social-fb:hover, .footer-down-container__social-vk:hover {
+		opacity: 1;
+}
+.footer-down-container__social-tw:active, .footer-down-container__social-inst:active, .footer-down-container__social-fb:active, .footer-down-container__social-vk:active {
+		opacity: 0.9;
+}
+.footer-down-container__link {
+		width: 28.8209606987%;
+}
+.footer-down-container__link-item {
+		position: relative;
+		display: inline-block;
+		margin-left: 20px;
+		color: #ffffff;
+		font-size: 0.85em;
+		text-align: left;
+		line-height: 1.5em;
+		border-bottom: 1px solid #8fa699;
+}
+.footer-down-container__link-item:nth-child(1)::before {
+		position: absolute;
+		top: 3px;
+		left: -20px;
+		display: block;
+		width: 15px;
+		height: 13px;
+		content: "";
+		background-image: url("/img/footer_heart.svg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+}
+.footer-down-container__link-item:nth-child(4) {
+		margin-left: 25px;
+}
+.footer-down-container__link-item:hover {
+		color: #ffbc9e;
+}
+.footer-down-container__link-item:active {
+		color: #ffbc9e;
+		border-bottom: none;
+}
+.footer-down-container__logo {
+		width: 16.5938864629%;
+}
+.footer-down-container__logo-link {
+		display: block;
+		margin-bottom: 5px;
+}
+.footer-down-container__logo-link:last-child {
+		color: #fefefe;
+		font-size: 0.75em;
+}
+.footer-down-container__logo-link:hover, .footer-down-container__logo-link:active {
+		color: #ffbc9e;
 }
