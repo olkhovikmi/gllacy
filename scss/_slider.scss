@@ -38,7 +38,13 @@
 #radio-one:hover ~ .toggle-box .toggle-off:nth-child(1),
 #radio-two:hover ~ .toggle-box .toggle-off:nth-child(2),
 #radio-three:hover ~ .toggle-box .toggle-off:nth-child(3) {
-	background-color: #b2c1b7;	
+	background-color: #e0e0e0;	
+}
+
+#radio-one:active ~ .toggle-box .toggle-off:nth-child(1),
+#radio-two:active ~ .toggle-box .toggle-off:nth-child(2),
+#radio-three:active ~ .toggle-box .toggle-off:nth-child(3) {
+	background-color: #fff;		
 }
 
 
