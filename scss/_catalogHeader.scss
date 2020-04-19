@@ -1,0 +1,143 @@
+.menu-left__active {
+	padding: 10px 14px;
+
+	color: #ffffff;
+	text-align: center;
+
+	background-color: #d07058;
+	border: none;
+	border-radius: 30px;
+}
+
+.menu-right__active {
+	width: 117px;
+	background-color: #f8f7f4;
+}
+
+.menu-right__active:active {
+	box-shadow: inset 0 2px 1px #696969;
+	background-color: #f8f7f4;
+	transition: all 0.3s ease-out;
+}
+
+.cart-active {	
+	position: relative;
+	margin-left: 21px;
+	padding-left: 8px;
+
+	color: $black;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.cart-active::before {
+	position: absolute;
+	top: -2px;
+	left: -21px;
+	display: block;
+	width: 21px;
+	height: 20px;
+	content: "";
+
+	background-image: url("/img/cart_active.svg");
+}
+
+.cart-form {
+	display: none;
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 540px;
+
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	background-color: #f8f7f4;
+
+	border-radius: 10px;
+	z-index: 200;
+}
+
+.cart-box {
+	padding: 20px 15px;
+}
+
+.cart-list {
+	display: flex;
+	flex-direction: column;
+
+	border-bottom: 1px solid #cacac7;
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+
+		color: $black;
+		font-size: .93em;
+		text-align: left;
+		line-height: 1.3em;
+	}
+
+	&__items:nth-child(2) {
+
+		.cart-list__name {
+			padding-top: 12px;
+		}
+
+	}
+
+	&__remove {}
+
+	&__img {}
+
+	&__name {}
+
+	&__weight {}
+
+	&__price {}
+
+	&__btn {
+		width: 170px;
+		padding: 13px 0;
+
+		color: #fefefe;
+		font-size: 1.3em;
+		font-weight: 700;
+
+		box-shadow: 0 1px 2px #ac1000;
+		background-color: $bgc-orng;
+		background-image: $bgi-orng;
+
+		border: none;
+		border-radius: 30px;
+		outline: none;
+		transform: translateX(170px);
+		cursor: pointer;
+	}
+
+	&__btn:hover {
+		box-shadow: 0 2px 2px #ac1000;
+		background-image: linear-gradient(to top, #f17d64 0%, #f26843 100%);
+	}
+
+	&__btn:active {
+		box-shadow: inset 0 2px 2px #942718;
+		background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+	}
+}
+
+	.price {
+		color: #999999;
+	}
+
+	.total {	
+		display: block;	
+		margin-top: 15px;
+		margin-bottom: 15px;
+
+		color: $black;
+		font-size: 1.1em;
+		font-weight: 700;
+		text-align: right;		
+	}
