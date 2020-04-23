@@ -1156,7 +1156,7 @@ body {
 		width: 15px;
 		height: 13px;
 		content: "";
-		background-image: url("img/footer_heart.svg");
+		background-image: url("../img/footer_heart.svg");
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 }
