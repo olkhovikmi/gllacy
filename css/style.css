@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
 		font-family: "Roboto";
 		src: url("/fonts/roboto.woff2") format("woff2"), url("/fonts/roboto.woff") format("woff");
@@ -251,7 +252,7 @@ body {
 		text-align: right;
 }
 .time-job__time {
-		margin-bottom: 8px;
+		margin-bottom: 3px;
 		font-size: 0.87em;
 		font-weight: 700;
 }
@@ -1023,6 +1024,28 @@ body {
 		padding-left: 15px;
 		background-color: #f8f7f4;
 		border-radius: 10px;
+}
+
+.navigation {
+		margin-top: 15px;
+}
+.navigation__item {
+		position: relative;
+		margin-right: 15px;
+		color: #ffffff;
+		font-size: 0.87em;
+		border-bottom: 1px solid #aebeb5;
+}
+.navigation__item:not(:last-child)::after {
+		position: absolute;
+		top: 0;
+		right: -12px;
+		display: block;
+		content: "»";
+}
+.navigation__item:last-child {
+		border-bottom: none;
+		margin-right: 0;
 }
 
 .footer-top-box {
