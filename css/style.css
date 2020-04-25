@@ -22,7 +22,6 @@
 		padding: 0;
 		list-style: none;
 		text-decoration: none;
-		box-sizing: border-box;
 }
 
 body {
@@ -1048,6 +1047,219 @@ body {
 		margin-right: 0;
 }
 
+.filter__title {
+		margin-top: 13px;
+		margin-bottom: 30px;
+		font-size: 2.2em;
+		font-weight: 700;
+}
+
+.filter__form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+}
+
+.filter-up {
+		display: flex;
+}
+
+.filter-sort {
+		width: 195px;
+		display: flex;
+		flex-direction: column;
+		margin-right: 15px;
+}
+.filter-sort__title {
+		margin-bottom: 6px;
+		padding-left: 16px;
+		font-size: 0.87em;
+		font-weight: 500;
+}
+.filter-sort__list {
+		width: 100%;
+}
+.filter-sort__item {
+		position: relative;
+		padding-top: 14px;
+		padding-left: 16px;
+		padding-bottom: 11px;
+		color: #ffffff;
+		font-weight: 500;
+		background-color: #aabab0;
+		line-height: 0.5em;
+		border-radius: 20px;
+		cursor: pointer;
+		transition: all 0.2s linear;
+}
+.filter-sort__item::after {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 8px solid #ffffff;
+}
+.filter-sort__item:hover {
+		color: #323232;
+}
+.filter-sort__item:hover::after {
+		border-top: 8px solid #323232;
+}
+.filter-sort__sublist {
+		display: none;
+		width: 192px;
+		position: absolute;
+		top: 33px;
+		left: 0;
+		background-color: #ffffff;
+}
+.filter-sort__sublist-item {
+		padding: 10px 0;
+		padding-left: 20px;
+		color: #323232;
+		font-size: 0.87em;
+		cursor: pointer;
+}
+.filter-sort__sublist-item:hover {
+		color: #fff;
+		background-color: #1e90ff;
+}
+
+.filter-price {
+		width: 220px;
+		margin-right: 15px;
+}
+.filter-price__sort {
+		width: 185px;
+		margin-bottom: 6px;
+		padding-left: 16px;
+		font-size: 0.87em;
+		font-weight: 500;
+}
+
+.price-min,
+.price-max {
+		width: 25px;
+		color: #ffffff;
+		border: none;
+		outline: none;
+		background-color: transparent;
+}
+
+.price-min::placeholder,
+.price-max::placeholder {
+		color: #ffffff;
+}
+
+.control-box {
+		position: relative;
+		width: 220px;
+		padding: 15px 20px;
+		background-color: #aabab0;
+		border-radius: 20px;
+		box-sizing: border-box;
+}
+.control-box .range-toggle {
+		position: absolute;
+		top: 7px;
+		width: 4px;
+		height: 4px;
+		background: #ababab;
+		border: 8px solid #ffffff;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: all 0.15s linear;
+}
+.control-box .range-toggle:hover {
+		top: 5px;
+		border: 9px solid #ffffff;
+}
+.control-box .range-toggle-min {
+		left: 30px;
+}
+.control-box .range-toggle-max {
+		right: 55px;
+}
+
+.control-basic {
+		width: 100%;
+		height: 2px;
+		background-color: #d1d9d3;
+}
+.control-basic_white {
+		height: 2px;
+		margin-left: 13px;
+		margin-right: 53px;
+		background-color: #fff;
+}
+
+.filter-fat {
+		width: 415px;
+}
+.filter-fat__title {
+		margin-bottom: 6px;
+		padding-left: 16px;
+		font-size: 0.87em;
+		font-weight: 500;
+}
+
+.fat-box {
+		width: 100%;
+		padding: 8px 15px;
+		background-color: #aabab0;
+		border-radius: 20px;
+		box-sizing: border-box;
+}
+
+.fat-radio {
+		display: inline-block;
+		position: relative;
+		margin-right: 12px;
+		margin-left: 22px;
+		padding-left: 10px;
+		cursor: pointer;
+}
+
+.fat-radio:last-child {
+		margin-right: 0;
+}
+
+.fat-radio::before {
+		position: absolute;
+		top: -2px;
+		left: -22px;
+		display: block;
+		content: "";
+		width: 22px;
+		height: 22px;
+		background-image: url("../img/radio-off.png");
+		opacity: 0.8;
+		cursor: pointer;
+}
+
+.fat-radio:hover::before {
+		opacity: 1;
+}
+
+#fat-0:checked ~ .fat-0::before,
+#fat-10:checked ~ .fat-10::before,
+#fat-30:checked ~ .fat-30::before,
+#fat-50:checked ~ .fat-50::before {
+		background-image: url("../img/radio-on.png");
+}
+
+#fat-0:disabled ~ .fat-0::before,
+#fat-10:disabled ~ .fat-10::before,
+#fat-30:disabled ~ .fat-30::before,
+#fat-50:disabled ~ .fat-50::before {
+		opacity: 0.4;
+}
+
 .footer-top-box {
 		position: relative;
 		width: 100%;
@@ -1114,15 +1326,15 @@ body {
 		align-items: center;
 }
 .footer-down-container__social {
-		width: 16.5938864629%;
+		width: 17.4672489083%;
 }
 .footer-down-container__social-link {
 		display: inline-block;
-		width: 36px;
-		height: 36px;
+		width: 32px;
+		height: 32px;
 		margin-right: 10px;
 		background-color: transparent;
-		border: 2px solid #c1cec7;
+		border: 3px solid #c1cec7;
 		border-radius: 50%;
 }
 .footer-down-container__social-link:last-child {

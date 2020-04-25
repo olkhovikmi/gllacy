@@ -36,3 +36,18 @@ cart.onclick = function () {
 		cartForm.style.display = '';
 	}
 };
+
+//FILTER-SORT
+
+let btnSort = document.querySelector('.filter-sort__item');
+let listItem = document.querySelectorAll('.filter-sort__sublist-item');
+
+btnSort.addEventListener('click', function () {
+	const subList = document.querySelector('.filter-sort__sublist');
+	if (subList.style.display == '') {
+		subList.style.display = 'block';
+	} else {
+		subList.style.display = '';
+	}
+});
+

@@ -1,0 +1,271 @@
+//FILTER
+
+.filter__title {
+	margin-top: 13px;
+	margin-bottom: 30px;
+
+	font-size: 2.2em;
+	font-weight: 700;
+}
+
+.filter__form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/////////////////////////////////////////////////
+
+.filter-up {
+	display: flex;
+
+}
+
+.filter-sort {
+	width: 195px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
+
+	&__title {
+		margin-bottom: 6px;
+		padding-left: 16px;
+
+		font-size: .87em;
+		font-weight: 500;
+	}
+
+	&__list {
+		width: 100%;
+	}
+
+
+	&__item {
+		position: relative;
+		padding-top: 14px;
+		padding-left: 16px;
+		padding-bottom: 11px;
+
+		color: #ffffff;
+		font-weight: 500;
+		background-color: #aabab0;
+		line-height: .5em;
+
+		border-radius: 20px;
+		cursor: pointer;
+		transition: all .2s linear;
+	}
+
+	&__item::after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 15px;
+		right: 15px;
+
+		width: 0;
+		height: 0;
+
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 8px solid #ffffff;
+	}
+
+	&__item:hover {
+		color: $black;
+	}
+
+	&__item:hover::after {
+		border-top: 8px solid $black;
+	}
+
+	&__sublist {
+		display: none;
+		width: 192px;
+		position: absolute;
+		top: 33px;
+		left: 0;
+
+		background-color: #ffffff;
+	}
+
+	&__sublist-item {
+		padding: 10px 0;
+		padding-left: 20px;
+
+		color: $black;
+		font-size: .87em;
+
+		cursor: pointer;
+	}
+
+	&__sublist-item:hover {
+		color: #fff;
+		background-color: #1e90ff;
+		;
+	}
+}
+
+//CONTROL
+
+
+.filter-price {
+	width: 220px;
+	margin-right: 15px;
+
+
+	&__sort {
+		width: 185px;
+		margin-bottom: 6px;
+		padding-left: 16px;
+
+		font-size: .87em;
+		font-weight: 500;
+	}
+}
+
+.price-title {}
+
+.price-min,
+.price-max {
+	width: 25px;
+
+	color: #ffffff;
+
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.price-min::placeholder,
+.price-max::placeholder {
+	color: #ffffff;
+}
+
+.price-dash {}
+
+.control-box {
+	position: relative;
+	width: 220px;
+	padding: 15px 20px;
+
+	background-color: #aabab0;
+
+	border-radius: 20px;
+	box-sizing: border-box;
+
+	.range-toggle {
+		position: absolute;
+		top: 7px;
+		width: 4px;
+		height: 4px;
+
+		background: #ababab;
+
+		border: 8px solid #ffffff;
+		border-radius: 50%;
+
+		cursor: pointer;
+		transition: all .15s linear;
+	}
+
+	.range-toggle:hover {
+		top: 5px;
+		border: 9px solid #ffffff;
+	}
+
+	.range-toggle-min {
+		left: 30px;
+	}
+
+	.range-toggle-max {
+		right: 55px;
+	}
+
+}
+
+.control-basic {
+	width: 100%;
+	height: 2px;
+
+	background-color: #d1d9d3;
+
+	&_white {
+		height: 2px;
+		margin-left: 13px;
+		margin-right: 53px;
+
+		background-color: #fff;
+	}
+}
+
+//FAT
+
+.filter-fat {
+	width: 415px;
+
+	&__title {
+		margin-bottom: 6px;
+		padding-left: 16px;
+
+		font-size: .87em;
+		font-weight: 500;
+	}
+}
+
+.fat-box {
+	width: 100%;
+	padding: 8px 15px;
+
+	background-color: #aabab0;
+	border-radius: 20px;
+
+	box-sizing: border-box;
+}
+
+.fat-radio {
+	display: inline-block;
+	position: relative;
+	margin-right: 12px;
+	margin-left: 22px;
+	padding-left: 10px;
+
+	cursor: pointer;
+}
+
+.fat-radio:last-child {
+	margin-right: 0;
+}
+
+.fat-radio::before {
+	position: absolute;
+	top: -2px;
+	left: -22px;
+	display: block;
+	content: '';
+	width: 22px;
+	height: 22px;
+
+	background-image: url('../img/radio-off.png');
+
+	opacity: 0.8;	
+	cursor: pointer;
+}
+
+.fat-radio:hover::before {
+	opacity: 1;
+}
+
+#fat-0:checked~.fat-0::before,
+#fat-10:checked~.fat-10::before,
+#fat-30:checked~.fat-30::before,
+#fat-50:checked~.fat-50::before {
+	background-image: url('../img/radio-on.png');		
+}
+
+#fat-0:disabled~.fat-0::before,
+#fat-10:disabled~.fat-10::before,
+#fat-30:disabled~.fat-30::before,
+#fat-50:disabled~.fat-50::before {
+	opacity: 0.4;	
+}
