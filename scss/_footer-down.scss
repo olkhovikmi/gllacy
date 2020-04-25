@@ -33,28 +33,28 @@
 	}
 
 	&__social-tw {
-		background-image: url('/img/tw.svg');
+		background-image: url('../img/tw.svg');
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		opacity: 0.8;
 	}
 
 	&__social-inst {
-		background-image: url('/img/ins.svg');
+		background-image: url('../img/ins.svg');
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		opacity: 0.8;
 	}
 
 	&__social-fb {
-		background-image: url('/img/fb.svg');
+		background-image: url('../img/fb.svg');
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		opacity: 0.8;
 	}
 
 	&__social-vk {
-		background-image: url('/img/vk.svg');
+		background-image: url('../img/vk.svg');
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		opacity: 0.8;
@@ -100,7 +100,7 @@
 		height: 13px;
 		content: "";
 
-		background-image: url("/img/footer_heart.svg");
+		background-image: url("../img/footer_heart.svg");
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 	}

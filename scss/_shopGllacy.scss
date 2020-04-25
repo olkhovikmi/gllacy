@@ -11,7 +11,7 @@
 
 		color: $black;
 
-		background-image: url('/img/shop_wafer.png');
+		background-image: url('../img/shop_wafer.png');
 		background-repeat: no-repeat;
 	}
 
@@ -61,7 +61,7 @@
 	height: 49px;
 	content: "";
 
-	background-image: url("/img/shop_1.svg");	
+	background-image: url("../img/shop_1.svg");	
 }
 .cow::before {
 	display: block;
@@ -72,7 +72,7 @@
 	height: 49px;
 	content: "";
 
-	background-image: url("/img/shop_3.svg");	
+	background-image: url("../img/shop_3.svg");	
 }
 .leaflet::before {
 	display: block;
@@ -83,7 +83,7 @@
 	height: 49px;
 	content: "";
 
-	background-image: url("/img/shop_2.svg");	
+	background-image: url("../img/shop_2.svg");	
 }
 .thermometer::before {
 	display: block;
@@ -94,5 +94,5 @@
 	height: 49px;
 	content: "";
 
-	background-image: url("/img/shop_4.svg");	
+	background-image: url("../img/shop_4.svg");	
 }

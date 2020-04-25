@@ -185,7 +185,7 @@
 		transition: all .5s ease-out;
 
 		.login:before {
-			background-image: url("/img/login-hover.svg");
+			background-image: url("../img/login-hover.svg");
 
 			transition: all .5s ease-out;
 		}
@@ -197,13 +197,13 @@
 		}
 
 		.search {
-			background-image: url("/img/loupe-hover.svg");
+			background-image: url("../img/loupe-hover.svg");
 
 			transition: all .5s ease-out;
 		}
 
 		.cart::before {
-			background-image: url("/img/cart-hover.svg");
+			background-image: url("../img/cart-hover.svg");
 
 			transition: all .5s ease-out;
 		}
@@ -233,7 +233,7 @@
 	width: 17px;
 	height: 17px;
 
-	background-image: url("/img/loupe.svg");
+	background-image: url("../img/loupe.svg");
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
@@ -259,7 +259,7 @@
 	height: 20px;
 	content: "";
 
-	background-image: url("/img/login.svg");
+	background-image: url("../img/login.svg");
 }
 
 .cart {
@@ -282,7 +282,7 @@
 	height: 20px;
 	content: "";
 
-	background-image: url("/img/cart.svg");
+	background-image: url("../img/cart.svg");
 }
 
 .btn-search {
@@ -296,7 +296,7 @@
 
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	background-color: #f8f7f4;
-	border-radius: 10px;
+	border-radius: 10px;	
 
 	input {
 		width: 100%;
@@ -306,6 +306,7 @@
 
 		border: 1px solid #d3d3d2;
 		border-radius: 10px;
+		box-sizing: border-box;
 	}
 
 	input::placeholder {
@@ -350,6 +351,7 @@
 
 		border: 1px solid #d3d3d2;
 		border-radius: 10px;
+		box-sizing: border-box;
 	}
 
 	input::placeholder {
