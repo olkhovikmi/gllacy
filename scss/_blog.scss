@@ -41,10 +41,12 @@
 	flex-basis: 50%;
 	padding: 5px 0;
 	padding-left: 5px;
-	padding-right: 10px;
+	padding-right: 18px;
 
 	background-image: url('../img/blog_2.png');
 	background-repeat: no-repeat;
+
+	box-sizing: border-box;
 
 	&__text {
 		margin-bottom: 35px;
@@ -63,6 +65,7 @@
 
 		border: 1px solid #d7d7d7;
 		border-radius: 10px;
+		box-sizing:border-box;
 	}
 
 	&__input::placeholder {
@@ -111,4 +114,5 @@
 
 	background-color: #f8f7f4;
 	border-radius: 10px;
+	box-sizing: border-box;
 }
