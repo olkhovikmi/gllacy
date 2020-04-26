@@ -17,8 +17,8 @@
 /////////////////////////////////////////////////
 
 .filter-up {
-	display: flex;
-
+	display: flex;	
+	margin-bottom: 18px;
 }
 
 .filter-sort {
@@ -87,6 +87,7 @@
 		left: 0;
 
 		background-color: #ffffff;
+		z-index: 300;
 	}
 
 	&__sublist-item {
@@ -248,7 +249,7 @@
 
 	background-image: url('../img/radio-off.png');
 
-	opacity: 0.8;	
+	opacity: 0.8;
 	cursor: pointer;
 }
 
@@ -260,12 +261,12 @@
 #fat-10:checked~.fat-10::before,
 #fat-30:checked~.fat-30::before,
 #fat-50:checked~.fat-50::before {
-	background-image: url('../img/radio-on.png');		
+	background-image: url('../img/radio-on.png');
 }
 
 #fat-0:disabled~.fat-0::before,
 #fat-10:disabled~.fat-10::before,
 #fat-30:disabled~.fat-30::before,
 #fat-50:disabled~.fat-50::before {
-	opacity: 0.4;	
+	opacity: 0.4;
 }

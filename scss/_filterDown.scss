@@ -1,0 +1,119 @@
+.filter-down {
+	display: flex;
+
+
+	&__btn {
+		width: 144px;
+		padding: 9px 0;
+
+		color: #ffffff;
+		font-weight: 500;
+		text-align: center;
+		line-height: .9em;
+
+		background-color: #AABAB0;
+		border: 2px solid #ffffff;
+		border-radius: 30px;
+
+		cursor: pointer;
+	}
+
+	&__btn:hover {
+		color: $black;
+		background-color: #f8f7f4;
+		transition: all 0.5s ease-out;
+	}
+
+	&__btn:active {
+		color: $black;
+		box-shadow: inset 0 2px 1px #696969;
+		background-color: #ededed;
+		transition: all 0.3s ease-out;
+	}
+}
+
+.fillers {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	border: none;
+
+	&__title {
+		padding-left: 16px;
+		margin-bottom: 6px;
+
+		font-size: .87em;
+		font-weight: 500;
+	}
+
+	&__item {
+		position: relative;
+		margin-left: 24px;
+		margin-right: 20px;
+
+		padding-left: 8px;
+		font-weight: 500;
+
+		cursor: pointer;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__item::before {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -24px;
+		content: "";
+		width: 24px;
+		height: 20px;
+
+		background-image: url("../img/checkbox-off.png");
+		background-repeat: no-repeat;
+
+		cursor: pointer;
+		opacity: 0.8;
+	}
+
+	&__item:hover::before {
+		opacity: 1;
+	}
+}
+
+.fillers-box {
+	display: inline-block;
+	width: 705px;
+	margin-right: 13px;
+	padding: 9px 16px;
+
+	background-color: #AABAB0;
+	border-radius: 30px;
+}
+
+#filler-1:checked~.fillers-box .filler-1::before,
+#filler-2:checked~.fillers-box .filler-2::before,
+#filler-3:checked~.fillers-box .filler-3::before,
+#filler-4:checked~.fillers-box .filler-4::before,
+#filler-5:checked~.fillers-box .filler-5::before {
+	background-image: url("../img/checkbox-on.png");
+	background-repeat: no-repeat;
+}
+
+#filler-1:disabled~.fillers-box .filler-1::before,
+#filler-2:disabled~.fillers-box .filler-2::before,
+#filler-3:disabled~.fillers-box .filler-3::before,
+#filler-4:disabled~.fillers-box .filler-4::before,
+#filler-5:disabled~.fillers-box .filler-5::before {
+	opacity: 0.4;
+}
+
+#filler-1:disabled:checked~.fillers-box .filler-1::before,
+#filler-2:disabled:checked~.fillers-box .filler-2::before,
+#filler-3:disabled:checked~.fillers-box .filler-3::before,
+#filler-4:disabled:checked~.fillers-box .filler-4::before,
+#filler-5:disabled:checked~.fillers-box .filler-5::before {
+	opacity: 0.4;
+}
