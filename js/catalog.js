@@ -50,4 +50,3 @@ btnSort.addEventListener('click', function () {
 		subList.style.display = '';
 	}
 });
-
